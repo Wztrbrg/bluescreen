@@ -1,0 +1,264 @@
+@import "./_variables";
+
+// Reset
+*,
+body,
+html,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Global style
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg-color;
+  font-family: $para-font;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $heading-font;
+  font-weight: 300;
+}
+
+button {
+  font-family: $para-font;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-dk-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Text color
+.dk-txt {
+  color: $txt-color;
+}
+
+.lt-txt {
+  color: $bg-color;
+}
+
+.pr-txt {
+  color: $prim-color;
+}
+
+.acc-txt {
+  color: $acc-color;
+}
+
+// Text sizes
+
+//Nav text
+.nav-txt {
+  font-family: $heading-font;
+  font-size: $card-para;
+}
+
+// hero headings
+.h-h {
+  font-size: $hero-heading;
+  font-weight: 500;
+}
+
+.h-sub {
+  font-size: $hero-subheading;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+// large heading (content area)
+.l-h {
+  font-size: $l-heading;
+  font-weight: 600;
+}
+// large paragraph (content area)
+.l-p {
+  font-size: $l-para;
+  line-height: 1.4;
+  font-weight: 400;
+  // letter-spacing: 0.2px;
+}
+
+// card heading
+.c-h {
+  font-size: $card-heading;
+  font-weight: 600;
+}
+//card paragraph
+.c-p {
+  font-size: $card-para;
+  line-height: 1.2;
+  font-weight: 400;
+  opacity: 0.6;
+  // letter-spacing: 0.3px;
+}
+
+// large card heading
+.lc-h {
+  font-size: $l-card-heading;
+  letter-spacing: 1px;
+}
+//card paragraph
+.lc-p {
+  font-size: $l-card-para;
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+}
+
+// footer heading
+.lf-h {
+  font-size: $l-card-heading;
+  letter-spacing: 1px;
+}
+//footer paragraph
+.lf-p {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.3px;
+}
+
+// Buttons
+.xl-btn {
+  font-size: $xl-btn-txt;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  &.prim {
+    background-color: $txt-color;
+    color: $bg-color;
+    border-radius: 8px;
+    padding: 12px 24px;
+  }
+
+  &.sec {
+    background-color: $sec-color;
+    color: #775ea5;
+    border-radius: 8px;
+    padding: 12px 24px;
+  }
+
+  &.acc {
+    background-color: $txt-color;
+    color: $bg-color;
+    border-radius: 2000px;
+    padding: 16px 34px;
+    // transition: 0.3s;
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(201, 75, 163, 1) 0%,
+        rgba(172, 135, 247, 1) 100%
+      );
+      box-shadow: 0 15px 15px #c90a5944;
+      transition: 0.2s;
+    }
+  }
+}
+
+.l-btn {
+  font-size: $l-btn-txt;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  &.prim {
+    background-color: $txt-color;
+    color: $bg-color;
+    border-radius: 8px;
+    padding: 12px 24px;
+  }
+
+  &.sec {
+    background-color: $sec-color;
+    color: #775ea5;
+    border-radius: 8px;
+    padding: 12px 24px;
+  }
+
+  &.acc {
+    background: linear-gradient(
+      90deg,
+      rgba(201, 75, 163, 1) 0%,
+      rgba(172, 135, 247, 1) 100%
+    );
+    color: $bg-color;
+    border-radius: 2000px;
+    padding: 16px 24px;
+  }
+}
+
+.s-btn {
+  font-size: $s-btn-txt;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+
+  &.prim {
+    background-color: $txt-color;
+    color: $bg-color;
+    border-radius: 8px;
+    padding: 10px 22px;
+  }
+
+  &.sec {
+    background-color: $sec-color;
+    color: #775ea5;
+    border-radius: 8px;
+    padding: 10px 22px;
+  }
+
+  &.acc {
+    background: linear-gradient(
+      90deg,
+      rgba(201, 75, 163, 1) 0%,
+      rgba(172, 135, 247, 1) 100%
+    );
+    color: $bg-color;
+    border-radius: 2000px;
+    padding: 12px 22px;
+  }
+}
+
+// Bg colors
+.prim-bgc {
+  background-color: $prim-color;
+}
+
+.acc-bgc {
+  background-color: $acc-color;
+}
+
+@media screen and (max-width: 1024px) {
+  .h-h {
+    font-size: $hero-heading-m;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .h-h {
+    font-size: $hero-heading-s;
+  }
+
+  .h-sub {
+    font-size: $hero-subheading-s;
+  }
+}
