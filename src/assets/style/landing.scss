@@ -3,13 +3,15 @@
 .landing-wrapper {
   position: relative;
   width: 100%;
-  height: calc(100vh - 118px);
+  // height: calc(100vh - 118px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  margin-top: 60px;
+  padding-top: 100px;
+  // margin-top: 60px;
 
   .bg-color-blur {
     position: absolute;
@@ -131,6 +133,7 @@
   .landing-wrapper {
     .example-img {
       border-radius: 0;
+      border: none;
       border-left: none;
       border-right: none;
     }
@@ -139,21 +142,47 @@
 
 @media screen and (max-width: 768px) {
   .landing-wrapper {
-    height: 100vh;
-    margin-top: 28px;
+    height: 100dvh;
+    padding-top: 50px;
+    overflow: hidden;
+
+    .bg-color-blur {
+      bottom: -190px;
+      opacity: 0.8;
+
+      &.left {
+        right: 0;
+        left: unset;
+        width: 50vw;
+        height: 500px;
+        background-color: $acc-color;
+      }
+
+      &.center {
+        left: 0;
+        width: 50vw;
+        height: 500px;
+        background-color: rgb(12, 111, 241);
+      }
+
+      &.right {
+        display: none;
+      }
+    }
+
     .example-img {
       position: absolute;
-      height: 50vh;
+      height: 300px;
       bottom: -10%;
       background-position: left top;
-      // opacity: 0.4;
+      overflow: hidden;
     }
     .landing-content {
       min-height: 400px;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
       z-index: 10;
-      background: linear-gradient(to bottom, $bg-color, #ffffff00);
+      // background: linear-gradient(to bottom, $bg-color, #ffffff00);
 
       .tag {
         display: none;

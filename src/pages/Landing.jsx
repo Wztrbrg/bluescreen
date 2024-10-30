@@ -13,7 +13,7 @@ const Landing = () => {
           <p className="tag dk-txt">OFFERT</p>
           <div className="heading-container">
             <h1 className="h-h dk-txt">
-              IT- & System&shy;utvecklings&shy;förslag
+              IT- & System&shy;utvecklingsförslag
             </h1>
             <h1 className="h-h dk-txt">
               Anpassat För <span className="dk-txt">Bluescreen AB</span>
